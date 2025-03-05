@@ -9,7 +9,11 @@
 // Start coding here
 
 const numbers1 = [3, -5, 10, 12, -7, 0, 8, 2];
-console.log(sumNegativeNumbers(numbers1)); // -12
-
 const number2 = [0, -4, -1, -5, 6, 5, 0];
+
+const sumNegativeNumbers = (numbers) => {
+    return numbers.filter(num => num<0).reduce((acc, num)=> acc + num,0)
+}
+
+console.log(sumNegativeNumbers(numbers1)); // -12
 console.log(sumNegativeNumbers(number2)); // -10
